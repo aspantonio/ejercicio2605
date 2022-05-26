@@ -1,0 +1,122 @@
+h1 {
+    text-align: center;
+  }
+  .fondo{
+      background-color: antiquewhite;
+  }
+  
+  .carrusel {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .carrusel ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 1030px;
+    scroll-behavior: smooth;
+  }
+  
+  .carrusel-fotos {
+    display: flex;
+    gap: 10px;
+    overflow: auto;
+  }
+  
+  .carrusel-fotos img {
+    background: black;
+    border: 4px solid black;
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+  }
+  
+  .carrusel-menu {
+    display: none;
+  }
+  
+  @media screen and (min-width: 500px) {
+    .carrusel-fotos {
+      overflow: hidden;
+    }
+  
+    .carrusel-fotos img {
+      width: 500px;
+      height: 400px;
+    }
+    .carrusel-menu {
+      display: block;
+    }
+    .carrusel-menu img {
+      box-sizing: border-box;
+      width: 50px;
+      height: 40px;
+      border: 10px solid black;
+    }
+    .carrusel-menu img:hover {
+      border: none;
+    }
+    .texto{
+        text-align: center;
+        display: flexbox;
+        gap: 10px;
+        justify-content: center;
+    }
+  }
+  
+  *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.galeria{
+    font-family: 'open sans';
+}
+
+.galeria h1{
+    text-align: center;
+    margin:20px 0 15px 0;
+    font-weight: 300;
+}
+
+.linea{
+    border-top: 5px solid #0077C0;
+    margin-bottom: 40px;
+}
+
+.contenedor-imagenes{
+    display:flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius:3px;
+}
+
+.contenedor-imagenes .imagen{
+    width: 32%;
+    position: relative;
+    height:250px;
+    margin-bottom:5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
+}
+.imagen img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+a{
+    justify-content:center ;
+}
+.tabla{
+  border: 1px solid black;
+}
+.tabla td{
+  border: 1px solid black;
+}
+.tabla tr{
+  border: 1px solid black;
+}
